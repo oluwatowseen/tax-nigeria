@@ -1,0 +1,526 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+body {
+  color: #000;
+	font-size: 16px;
+  font-family: 'karla', sans-serif;
+  line-height: normal;
+  width: 100%;
+}
+/* @media (max-width: 768px){
+    body {
+        padding-top: 50px;
+    }
+} */
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  line-height: normal;
+}
+h1,h2,h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+p {
+	font-family: 'Karla', sans-serif;
+}
+a {
+  font-family: 'poppins', sans-serif;
+	text-decoration: none !important;
+  color: #000;
+}
+a:hover {
+  color: #000;
+	text-decoration: none !important;
+  opacity: 0.7;
+}
+img {
+  outline: none;
+  width: 100%;
+}
+.bold {
+  font-weight: bold;
+}
+/* header mobile responsiveness */
+.navbar-nav {
+    margin: 0;
+}
+
+/* Tax-Nigeria  */
+.container-flex {
+  display: flex;
+  min-height: 500px;
+}
+.container-div-flex {
+  width: 100%;
+  min-height: 100px;
+  margin: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+}
+@media (max-width: 768px){
+    .container-div-flex {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+}
+/* Side Menu */
+
+/*hidden menu  */
+.main-menu {
+  width: 20%;
+  height: 100vh;
+  overflow: auto;
+  background-color: #fff;
+  display: none;
+  z-index: 10000;
+}
+@media (max-width: 768px){
+    .main-menu {
+        width: 50%;
+    }
+}
+.open-menu {
+  margin-right: 20px;
+  /* font-size: 20px; */
+  cursor: pointer;
+}
+.close-menu {
+  /* margin-right: 10px; */
+  font-size: 20px;
+}
+.main-menu>hr {
+  margin: 0px;
+}
+.menu-header-div {
+  padding: 20px 25px;
+  text-align: center;
+}
+.menu-header {
+  display: flex;
+  margin-bottom: 30px;
+}
+.menu-header .brand-logo {
+  margin-right: auto;
+}
+.menu-search-div {
+  position: relative;
+  margin: 20px auto;
+}
+.menu-search {
+  padding-right: 30px;
+}
+.menu-search-div .menu-search-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+}
+.menu-links-div {
+  padding: 20px 25px;
+  font-size: 13px;
+}
+.menu-inline-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.menu-inline-links>a {
+  font-size: 13px;
+}
+.menu-links>a {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-footer {
+
+}
+.menu-footer-buttons {
+  list-style: none;
+  padding: 0px
+}
+
+.menu-footer-buttons>li  {
+  margin: 20px 0;
+  border: 1px solid black;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.menu-footer-buttons>li:hover  {
+  background-color: beige;
+}
+
+.menu-footer-buttons >li >a:hover {
+  color: #000;
+}
+
+/* the body without menu */
+.main-body {
+  padding-top: 60px;
+  width: 100%;
+  min-height: 500px;
+  background-color: #fff;
+}
+
+/* header */
+.tax-nigeria-header {
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  line-height: 60px;
+}
+
+
+.brand-logo-div {
+  margin-right: auto;
+  font-size: 20px;
+}
+/* .brand-logo-div {
+
+} */
+.brand-logo {
+  color: #000;
+  font-weight: bold;
+}
+.header-links {
+  margin-left: auto;
+}
+.link-button {
+  padding: 10px 25px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+
+
+/* top banner */
+.content-section {
+  min-height: 50px;
+  display: block;
+}
+.content-container {
+  padding: 20px 25px;
+}
+@media (max-width: 768px){
+    .content-container {
+      padding: 10px;
+    }
+}
+.contents {
+  display: block;
+}
+.top-banner {
+  min-height: 500px;
+  background-image: url('../images/banner.jpeg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.top-banner .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.top-banner-content {
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  margin: 60px auto;
+}
+@media (max-width: 768px){
+    .top-banner-content {
+        width: 100%;
+    }
+}
+.content-link {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.content-link>a {
+  color: #fff;
+  border-color: #fff;
+}
+.content-link>a:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  transition: .3s;
+}
+.books-list-section {
+  background: #fff;
+}
+.books-list-container {
+  text-align: center;
+}
+.after-heading {
+  color: #737373;
+  margin-top: -10px;
+  font-weight: normal;
+}
+.books-list {
+  list-style: none;
+  width: 60%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+@media (max-width: 768px){
+    .books-list {
+        width: 100%;
+    }
+}
+.books-list>li {
+  width: 120px;
+  height: auto;
+  margin: 8px;
+}
+.books-list>li>a>img {
+  height: 160px;
+  box-shadow: 2px 1px 5px 0px #737373;
+}
+.devices-section {
+  background-color: #F8F9FD;
+  display: flex;
+  min-height: 500px;
+  margin: 0 auto;
+}
+.book-stack-content {
+  text-align: center;
+  width: 100%;
+}
+.book-stack-images-right,
+.book-stack-images-left {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: auto;
+}
+@media (max-width: 768px){
+  .book-stack-images-right,
+  .book-stack-images-left {
+      display: none;
+    }
+}
+.book-stack-images-right {
+  background-image: url('../images/book-stack-left.png');
+}
+.book-stack-images-left {
+  background-image: url('../images/book-stack-right.png');
+}
+.membership-section {
+  background-color: white;
+  text-align: center;
+}
+.membership-container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 768px){
+  .membership-container  {
+      width: 100%;
+    }
+}
+.membership-offering-container {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 768px){
+  .membership-offering-container  {
+      width: 100%;
+    }
+}
+.membership-offering {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.membership-offering>li {
+  width: 24%;
+  height: auto;
+  margin: 40px 0px;
+  padding: 0px 70px
+}
+.membership-offering-link>h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.membership-upsale {
+  font-weight: normal;
+  color: #737373;
+  font-size: 16px;
+}
+.membership-section .content-link>a {
+  color: #000;
+  border-color: #000;
+  /* background-color: #00C9A7; */
+}
+.membership-section .content-link>a:hover {
+  color: #000;
+  border-color: #000;
+  transition: .3s;
+}
+
+
+/* footer */
+footer {
+  background-color: #F8F9FD;
+}
+.home-links-section {
+  width: 80%;
+  margin: 10px auto;
+}
+.home-links-container {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+.home-links-container>li {
+  display: inline-block;
+  margin: 0 30px;
+}
+.home-links {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+.social-section {
+  text-align: center;
+}
+.social-container {
+  display: inline-block;
+  padding-left: 0;
+}
+.social-icons {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.twitter {
+  color: #55acee;
+}
+.facebook-icon-color {
+  color: #3b5998;
+}
+.pinterest {
+  color: #c8232c;
+}
+.mobile-icons {
+  width: 121px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+
+/* Modal */
+.modal-content {
+  text-align: center;
+}
+.modal-buttons {
+  list-style: none;
+  padding-left: 0px;
+}
+.modal-buttons>li {
+  margin-bottom: 30px;
+}
+.modal-buttons .link-button>i {
+  margin-right: 15px;
+}
+@media (min-width: 768px){
+  .modal-sm {
+    width: 370px;
+  }
+}
+.modal-header {
+  border-bottom: none;
+  padding: 15px 15px 25px 15px;
+}
+.modal-title {
+  padding-top: 10px;
+  font-size: 16px;
+}
+.modal-header .close {
+  font-weight: normal;
+}
+.modal-body {
+  padding: 5px 30px;
+}
+.lined-content {
+  font-size: 14px;
+  overflow: hidden;
+}
+.lined-content:before,
+.lined-content:after {
+    background-color: #cccccc;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 35%;
+}
+.lined-content:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.lined-content:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.form-section {
+  text-align: left;
+}
+.modal-span {
+  font-weight: normal;
+  color: #737373;
+}
+.modal-body .form-section .form-control {
+  height: 40px;
+}
+.modal-signup-button {
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 3px;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 25px;
+}
+.t-and-c {
+  font-size: 13px;
+}
+.modal-signin-link {
+  margin-bottom: 15px;
+}
+.modal-footer {
+  text-align: center;
+}
