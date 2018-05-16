@@ -433,6 +433,15 @@ footer {
 .pinterest {
   color: #c8232c;
 }
+.twitter:hover {
+  color: #55acee;
+}
+.facebook-icon-color:hover {
+  color: #3b5998;
+}
+.pinterest:hover {
+  color: #c8232c;
+}
 .mobile-icons {
   width: 121px;
   display: inline-block;

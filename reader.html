@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tax Nigeria | Your Online Reading Library on Tax </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >
+    <link rel="stylesheet" type="text/css" href="css/reader.css" >
+</head>
+<body>
+  <div class="reader-container">
+    <div class="reader-header flex-container">
+      <div class="reader-header-left">
+        <ul class="nav-list-left">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Table of contents" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list-ul" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="reader-header-center">
+        <div class="brand-logo">
+          <a href="index.html">TaxNigeria</a>
+        </div>
+      </div>
+      <div class="reader-header-right">
+        <ul class="nav-list-right">
+          <li class="reader-search-container">
+            <span class="menu-search-icon glyphicon glyphicon-search"></span>
+            <input type="text" class="form-control reader-search" placeholder="Search">
+          </li>
+          <li>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Full screen"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Display setting" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-font" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="More actions" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <span class="control-button prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+      <span class="control-button next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="reader-body">
+      <div class="main-reader-container">
+        <div class="main-reader-left"></div>
+        <div class="main-reader-right"></div>
+      </div>
+      <div class="main-reader-footer">
+        <div class="main-reader-footer-left">
+          <div class="reader-upsale">
+            <p class="bold">Enjoying this preview? Become a member to read the full title.</p>
+            <p class="">Join today and read free for 7 days</p>
+          </div>
+        </div>
+        <div class="main-reader-footer-right">
+          <div class="content-link zero-margin ">
+            <a href="" class="link-button reader-sub-button">Start Free For 7 Days</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reader-footer">
+      <div class="slide_container">
+          <input type="range" min="1" max="100" value="1" class="slider" id="bookRange">
+          <div class="value-read">
+            <span>
+              <span class="pull-right"><span id="valueRead"></span>% read</span>
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    var slider = document.getElementById("bookRange");
+    var output = document.getElementById("valueRead");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    };
+  </script>
+</body>
+</html
